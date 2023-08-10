@@ -1,8 +1,35 @@
 .container{
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 header {
     background-color: rgb(5, 114, 158);
+}
+
+#nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-top{
+    display: flex;
+    flex: 1;
+}
+
+.nav-list{
+    display: flex; 
+    flex: 1;
+    gap: 1rem;
+    /* this will hid bullet points */
+    list-style-type: none;
+    /* margin: 0;
+    padding: 0;
+    list-style: none; */
 }
