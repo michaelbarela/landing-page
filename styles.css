@@ -18,6 +18,11 @@ header {
   list-style: none;
 }
 
+img{
+    height: 300px;
+    width: 300px;
+}
+
 .header-top{
     display: flex;
     flex: 1;
