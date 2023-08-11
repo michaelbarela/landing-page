@@ -52,6 +52,15 @@ p, button {
     background-color: rgb(5, 114, 158);
 } */
 
+.hero{
+    display: flex;
+    color: #F9FAF8;
+    background-color: #054c6c;
+    padding: 20px 0px 20px 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .header-logo img{
     height: 70px;
     width: 70px;
