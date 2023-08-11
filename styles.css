@@ -26,15 +26,24 @@ p, button {
     display: flex;
     color: #F9FAF8;
     background-color: #054c6c;
-    padding: 20px 0px 20px 100px;
+    padding: 20px 100px;
     align-items: center;
+}
+
+.header-logo img{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    /* padding-left: 100px; */
+    margin-right: auto;
+    border-radius: 25px;
 }
 
 /* header color and space */
 .header-link {
     display: flex;
     margin-left: auto;
-    /* padding: 0px 100px 0px 0px;   */ 
+    /* padding: 0px 100px 0px 0px;    */
     /* either padding or space-between get same results */
     justify-content: space-between;
 }
@@ -48,9 +57,9 @@ p, button {
     /* font-family: 'Roboto', arial; */
 }
 
-/* .box {
-    background-color: rgb(5, 114, 158);
-} */
+/* End of Nav Section */
+
+/* Beginning of Hero Section */
 
 .hero{
     display: flex;
@@ -61,34 +70,35 @@ p, button {
     justify-content: space-around;
 }
 
-.header-logo img{
-    height: 70px;
-    width: 70px;
-    cursor: pointer;
-    margin-right: auto;
+.hero-1{
+    flex-basis: 30%;
 }
 
 .header-logo:hover img{
     filter: contrast(.2);
 }
 
-.img > img {
-    height: 200px;
-    width: 250px;
+.hero-img > img {
+    height: 260px;
+    width: 300px;
     cursor: pointer;
+    /* this rounds the pictures edges */
+    border-radius: 100px;
     margin-right: auto;
 }
 
-.img:hover > img {
+.hero-img:hover > img {
+    /* invert image when hover */
     filter: invert(.30);
     margin-right: auto;
 }
 
 button {
-    background-color: #4e8ecd; /* Blue */
+    background-color: #f3fb5b; /* Blue */
     border: none;
-    color: white;
+    color: black;
     padding: 7px 15px;
+    border-radius: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -99,6 +109,7 @@ button {
 
 button:hover{
     background-color: #05488a; /* Blue */
+    border-radius: 20px;
     border: none;
     color: white;
     padding: 7px 15px;
@@ -107,3 +118,5 @@ button:hover{
     display: inline-block;
     font-size: 16px;
 }
+
+/* End of Hero Section */
