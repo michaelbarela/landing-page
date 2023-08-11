@@ -1,35 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-*{
-    box-sizing: border-box;
-    margin: 0;
+body{
+    background-color: #FFFFFF;
     padding: 0;
+    margin: 0;
+    text-align: center
 }
 
-li, a, button {
+
+
+p, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: rgb(244, 248, 255);
     text-decoration: none;
 }
-.header {
+
+.container > .box {
     background-color: rgb(5, 114, 158);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
+    /* flex-direction: row-reverse; */
     padding: 30px 5%;
 }
 
-.logo{
+/* .top {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+.header-logo img{
     height: 70px;
     width: 70px;
     cursor: pointer;
+    margin-right: auto;
 }
 
 .nav-list{
-    list-style-type: none;
+    list-style: none;
+    /* display: flex; */
+    
 } 
+
+.nav-list li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.nav-list li a {
+    transition: all 0.3s ease 0s;
+}
 
 
 .print {
@@ -41,16 +63,11 @@ li, a, button {
     background-color: #4e8ecd; /* Blue */
     border: none;
     color: white;
-    padding: 10px 20px;
+    padding: 7px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
     transition-duration: 0.4s; /*Hover Speed*/
-}
-
-/* Hover selector for sign up button */
-.description:hover > button {
-    background-color: #4CAF50; /* Green */
-    color: white;
 }
