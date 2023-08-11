@@ -17,18 +17,39 @@ p, button {
     text-decoration: none;
 }
 
-.container > .box {
-    background-color: rgb(5, 114, 158);
+.container {
     display: flex;
-    
-    /* flex-direction: row-reverse; */
-    padding: 30px 5%;
+    flex-direction: column;
 }
 
-/* .top {
-    flex-wrap: wrap;
-    justify-content: space-around;
+.navbar{
+    display: flex;
+    color: #F9FAF8;
+    background-color: #054c6c;
+    padding: 20px 0px 20px 100px;
     align-items: center;
+}
+
+/* header color and space */
+.header-link {
+    display: flex;
+    margin-left: auto;
+    /* padding: 0px 100px 0px 0px;   */ 
+    /* either padding or space-between get same results */
+    justify-content: space-between;
+}
+
+/* header link decoration */
+.header-link a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+    padding: 10px;
+    /* font-family: 'Roboto', arial; */
+}
+
+/* .box {
+    background-color: rgb(5, 114, 158);
 } */
 
 .header-logo img{
@@ -38,28 +59,23 @@ p, button {
     margin-right: auto;
 }
 
-.nav-list{
-    list-style: none;
-    /* display: flex; */
-    
-} 
-
-.nav-list li{
-    display: inline-block;
-    padding: 0 10px;
+.header-logo:hover img{
+    filter: contrast(.2);
 }
 
-.nav-list li a {
-    transition: all 0.3s ease 0s;
-}
-
-
-.print {
+.img > img {
     height: 200px;
     width: 250px;
+    cursor: pointer;
+    margin-right: auto;
 }
 
-.description > button {
+.img:hover > img {
+    filter: invert(.30);
+    margin-right: auto;
+}
+
+button {
     background-color: #4e8ecd; /* Blue */
     border: none;
     color: white;
@@ -70,4 +86,15 @@ p, button {
     font-size: 16px;
     cursor: pointer;
     transition-duration: 0.4s; /*Hover Speed*/
+}
+
+button:hover{
+    background-color: #05488a; /* Blue */
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
