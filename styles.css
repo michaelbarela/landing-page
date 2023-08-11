@@ -1,40 +1,30 @@
-.container{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    list-style: none;
 }
-
-header {
+.header {
     background-color: rgb(5, 114, 158);
-}
-
-.nav-list {
-  /* display: flex;
-  justify-content: space-between;
-  gap: 1rem; */
-  
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-img{
-    height: 300px;
-    width: 300px;
-}
-
-.header-top{
     display: flex;
+    flex-wrap: wrap;
     flex: 1;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
 }
 
 .nav-list{
-    display: flex; 
+    display: flex;
     flex: 1;
-    gap: 1rem;
-    /* this will hid bullet points */
     list-style-type: none;
-    /* margin: 0;
-    padding: 0;
-    list-style: none; */
+} 
+
+
+.print {
+    height: 200px;
+    width: 250px;
 }
