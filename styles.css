@@ -87,11 +87,10 @@ p, button {
     margin-right: auto;
 }
 
-.hero-img:hover > img {
-    /* invert image when hover */
+/* .hero-img:hover > img {
     filter: invert(.30);
     margin-right: auto;
-}
+} */
 
 button {
     background-color: #f3fb5b; /* Blue */
@@ -108,7 +107,7 @@ button {
 }
 
 button:hover{
-    background-color: #05488a; /* Blue */
+    background-color: #d36517; /* Blue */
     border-radius: 20px;
     border: none;
     color: white;
@@ -120,3 +119,35 @@ button:hover{
 }
 
 /* End of Hero Section */
+
+.content{
+    background-color: #f5fc72;
+    color: #05488a;
+}
+
+.content-info{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.content-info img {
+    height: 250px;
+    width: 250px;
+}
+
+/* End of Content Section */
+
+.quote{
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #e1e1ee;
+    color: #d36517;
+    padding: 2.5%;
+}
+
+.quote > h2{
+    color: #05488a;
+    font-style: italic;
+}
